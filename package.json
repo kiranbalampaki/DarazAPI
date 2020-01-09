@@ -1,0 +1,19 @@
+{
+  "name": "darazapi",
+  "version": "1.0.0",
+  "description": "A Node.js RESTful API Project (Build a clone of Daraz Application)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "Kiran Balampaki",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
