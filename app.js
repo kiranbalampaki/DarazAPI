@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 const productRoutes = require("./api/routes/products");
+const userRoutes = require("./api/routes/users");
 
 mongoose.connect('mongodb://localhost:27017/darazdb', { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -28,6 +29,7 @@ app.use((req, res, next) => {
 
 //routes to handle requests
 app.use('/products', productRoutes);
+app.use('/users', userRoutes);
 
 
 //handle routing errors
