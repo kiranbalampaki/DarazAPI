@@ -10,7 +10,7 @@ const userRoutes = require("./api/routes/users");
 mongoose.connect('mongodb://localhost:27017/darazdb', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(morgan("dev"));
-app.use(express.static('${__dirname}/public/uploads/'));
+app.use('/upload', express.static(__dirname+'/public/uploads'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
