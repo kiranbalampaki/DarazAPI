@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const app = express();
 
-const productRoutes = require("./api/routes/products");
+  const productRoutes = require("./api/routes/products");
 const userRoutes = require("./api/routes/users");
 
 mongoose.connect('mongodb://localhost:27017/darazdb', { useNewUrlParser: true, useUnifiedTopology: true });
