@@ -43,7 +43,7 @@ router.post('/signup', (req, res, next) => {
 });
 
 router.post('/login', (req, res, next) => {
-    User.findOne({ phone: req.body.phone })
+    User.findOne({ email: req.body.email })
         .then((user) => {
             if (user == null) {
                 let err = new Error('Authentication Failed');
